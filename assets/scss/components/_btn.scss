@@ -1,0 +1,59 @@
+// 變數
+$transition-duration: 0.3s;
+
+.btn.btn-custom {
+  background-color: $accent-200;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: background-color $transition-duration, transform $transition-duration;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: $accent-300;
+    transform: translateY(-2px);
+  }
+
+  &:disabled {
+    background-color: $gray-300;
+    cursor: not-allowed;
+    pointer-events: none;
+
+    &:hover {
+      background-color: $gray-300; // 確保懸停時不改變顏色
+      transform: none;
+    }
+  }
+
+  .icon {
+    margin-left: 12px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    transition: transform $transition-duration;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 20px;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &-gray {
+    background-color: $gray-300;
+    color: $neutral-500;
+  }
+}

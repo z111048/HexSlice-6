@@ -1,0 +1,62 @@
+.swiper-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 232px;
+
+  &.hr-line {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 50%;
+      width: 80px;
+      height: 1px;
+      background-color: $neutral-400;
+    }
+  }
+
+  .switcher {
+    // .text-neutral-400
+    color: $neutral-400;
+    // 結合了 .border, .border-1, 和 .border-neutral-400
+    border: 1px solid $neutral-400;
+    // 等同於 .rounded-pill
+    border-radius: 50rem;
+    // @extend .text-neutral-400;
+    // @extend .border;
+    // @extend .border-1;
+    // @extend .border-neutral-400;
+    // @extend .rounded-pill;
+
+    padding: 0px;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $neutral-400;
+      color: white;
+    }
+
+    &:disabled {
+      border-color: $neutral-200;
+      color: $neutral-200;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    .bi {
+      display: inline-block;
+      padding: 4px 16px;
+
+      &.bi-arrow-left::before,
+      &.bi-arrow-right::before {
+        width: 24px;
+        text-align: center;
+        color: currentColor;
+      }
+    }
+  }
+}

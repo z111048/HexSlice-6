@@ -1,0 +1,76 @@
+// Typography Variables
+$font-weights: (
+  'semibold': 600,
+  'bold': 700,
+  'black': 900,
+);
+
+// Typography Mixins
+@mixin text-style($size, $line-height, $letter-spacing, $weight) {
+  font-size: $size + px;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing + em;
+  font-weight: map-get($font-weights, $weight);
+}
+
+// Heading Styles
+@mixin h1 {
+  @include text-style(40, 120%, 0.1, 'black');
+}
+
+@mixin h2 {
+  @include text-style(32, 120%, 0.1, 'black');
+}
+
+@mixin h3 {
+  @include text-style(28, 120%, 0.1, 'black');
+}
+
+@mixin h4 {
+  @include text-style(24, 120%, 0.1, 'bold');
+}
+
+@mixin h5 {
+  @include text-style(20, 120%, 0.1, 'bold');
+}
+
+@mixin h6 {
+  @include text-style(16, 120%, 0.1, 'bold');
+}
+
+@mixin fs-1 {
+  @include text-style(16, 150%, 0.05, 'semibold');
+}
+
+// Usage
+h1 {
+  @include h1;
+}
+h2 {
+  @include h2;
+}
+h3 {
+  @include h3;
+}
+h4 {
+  @include h4;
+}
+h5 {
+  @include h5;
+}
+h6 {
+  @include h6;
+}
+.fs-1 {
+  @include fs-1;
+}
+
+// Optional: Responsive adjustments
+// @media (max-width: 768px) {
+//   h1 { font-size: 32px; }
+//   h2 { font-size: 28px; }
+//   h3 { font-size: 24px; }
+//   h4 { font-size: 20px; }
+//   h5 { font-size: 18px; }
+//   h6 { font-size: 16px; }
+// }

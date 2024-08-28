@@ -1,0 +1,36 @@
+.breadcrumb {
+  padding: 12px;
+  margin-top: 80px;
+  margin-bottom: 16px;
+  @media (max-width: 768px) {
+    margin-top: 40px;
+    margin-bottom: 4px;
+  }
+
+  &-item {
+    display: inline;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 2;
+      font-weight: 400;
+    }
+
+    & + .breadcrumb-item::before {
+      content: '/';
+      padding: 0 6px;
+      color: $neutral-400;
+    }
+
+    &:not(.active) a {
+      color: $neutral-400;
+    }
+
+    & a:hover {
+      color: $accent-200;
+    }
+  }
+}

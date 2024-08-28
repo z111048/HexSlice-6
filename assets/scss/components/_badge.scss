@@ -1,0 +1,25 @@
+.badge.badge-custom {
+  // 基本樣式
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  // Default
+  background-color: $primary-300;
+  color: $primary-400;
+
+  // Hover & Pressed
+  &:hover,
+  &:focus {
+    background-color: $primary-400;
+    color: white;
+  }
+
+  // 過渡效果
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

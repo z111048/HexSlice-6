@@ -1,0 +1,122 @@
+.card.card_hotTravel {
+  border-radius: 12px;
+  border-style: none;
+  padding: 40px;
+  gap: 16px;
+  background-color: transparent;
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+  @media (max-width: 576px) {
+    // width: 324px;
+    box-shadow: 0px 2px 8px 0px #6e6b6714;
+  }
+
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 24px;
+    gap: 24px;
+    border-bottom-style: none;
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+    .card-title {
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 28.8px;
+      letter-spacing: 0.1em;
+      color: $accent-200;
+      margin-bottom: 0;
+      @media (max-width: 375px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 0;
+      @media (max-width: 576px) {
+        gap: 8px;
+      }
+      li {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+        letter-spacing: 0.1em;
+        color: $neutral-500;
+        @media (max-width: 576px) {
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+  }
+
+  .card-body {
+    display: flex;
+    gap: 4px;
+    @media (max-width: 768px) {
+      padding: 0px;
+      justify-content: center;
+    }
+    picture {
+      img {
+        border-radius: 4px;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      @media (max-width: 992px) {
+        // 隱藏後一張照片
+        &:nth-last-child(-n + 1) {
+          display: none;
+        }
+      }
+      @media (max-width: 768px) {
+        // 隱藏後二張照片
+        &:nth-last-child(-n + 2) {
+          display: none;
+        }
+      }
+      @media (max-width: 576px) {
+        // 隱藏後三張照片
+        &:nth-last-child(-n + 3) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .card-footer {
+    background-color: transparent;
+    border-style: none;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 16px;
+      padding: 0px;
+    }
+
+    .badge-group {
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+
+    .badge-custom {
+      @media (max-width: 767px) {
+        font-size: 12px;
+      }
+    }
+  }
+}

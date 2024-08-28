@@ -1,0 +1,41 @@
+.text-custom {
+  // Default
+  font-family: Newsreader;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: $accent-200;
+  padding: 8px 0px;
+  transition: color 0.3s ease;
+
+  // Hover & Pressed
+  &:hover,
+  &:focus {
+    color: $accent-300;
+    text-decoration: none;
+  }
+
+  // Disabled
+  &.disabled,
+  &:disabled {
+    color: $neutral-300;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.text-custom-sm {
+  @media (max-width: 576px) {
+    font-size: 16px;
+  }
+}

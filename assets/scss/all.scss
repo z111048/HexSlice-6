@@ -1,0 +1,27 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import './utils/variables';
+@import '../../node_modules/bootstrap';
+
+@import './utils/utilities';
+@import 'bootstrap/scss/utilities/api';
+
+@import './base/base';
+@import './base/typography';
+
+@import './components/btn';
+@import './components/switcher';
+@import './components/badge';
+@import './components/text';
+@import './components/card_hotTopic';
+@import './components/card_arcticle';
+@import './components/card_life';
+@import './components/card_showcase';
+@import './components/card_hotTravel';
+@import './components/card_read';
+@import './components/breadcrumb';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/index';
+@import './pages/arcicle';
