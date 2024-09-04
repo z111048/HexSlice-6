@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signUp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <script type="module" crossorigin src="/HexSlice-6/assets/main-dc05fdc8.js"></script>
+    <link rel="stylesheet" href="/HexSlice-6/assets/main-a90576bd.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <div class="navbar-content">
+      <a class="navbar-brand" href="./index.html">
+        <img src="/HexSlice-6/assets/logo-510a992f.svg" alt="logo" />
+      </a>
+
+      <button
+        class="navbar-toggler d-lg-none ms-auto"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent"
+        aria-controls="navbarContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <div class="d-flex align-items-center">
+          <button
+            type="button"
+            class="btn-close d-lg-none mb-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <form class="navbar-search" role="search">
+          <input class="form-control" type="search" name="search" placeholder="搜尋文章" aria-label="Search" />
+          <button class="btn" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="./article.html">所有文章</a></li>
+          <li class="nav-item"><a class="nav-link" href="./subscribe.html">訂閱方案</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">關於我們</a></li>
+          <li class="nav-item">
+            <a href="./signin.html" class="btn btn-custom fs-6 w-100 text-white"> 登入 / 註冊 </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+    <main>
+      <section class="section-signup">
+        <div class="container mt-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="signup-content bg-white rounded-2 p-5 p-md-7 d-flex flex-column row-gap-5 row-gap-md-7">
+                <h4 class="text-accent-200 fw-bolder">註冊</h4>
+                <form class="d-flex flex-column row-gap-5 row-gap-md-7">
+                  <div class="d-flex flex-column row-gap-5 row-gap-md-7">
+                    <div>
+                      <label for="username" class="form-label h6 text-neutral-500">會員帳號</label>
+                      <input
+                        type="text"
+                        class="form-control rounded-2 bg-neutral-200"
+                        id="username"
+                        placeholder="請輸入會員帳號"
+                      />
+                    </div>
+                    <div>
+                      <label for="password" class="form-label h6 text-neutral-500">密碼</label>
+                      <input
+                        type="password"
+                        class="form-control rounded-2 bg-neutral-200"
+                        id="password"
+                        placeholder="請輸入密碼"
+                      />
+                    </div>
+                    <div>
+                      <label for="email" class="form-label h6 text-neutral-500">電子信箱</label>
+                      <input
+                        type="email"
+                        class="form-control rounded-2 bg-neutral-200"
+                        id="email"
+                        placeholder="請輸入電子信箱"
+                      />
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-custom fs-6 w-100">
+                    立即註冊
+                    <span class="bi bi-arrow-right ms-2"></span>
+                  </button>
+                </form>
+                <p class="text-center text-neutral-300 position-relative deco-hr">
+                  <span>或以其他方式註冊</span>
+                </p>
+                <div>
+                  <a href="https://www.google.com.tw/?hl=zh_TW" class="btn w-100 mb-1 border-0 bg-neutral-200">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGySURBVHgBtZM/T8JAGMafa4kQHSSMTCXRxMRBMK5GOjqYlNFJ/QAmTqyIg3HzIwCLjnQwrpToZqJFXRyMXYxOSmQAIuV8j9YGShv/RJ/k7tr33v7e5/4U+COxsAmeRRw2NMpQBgEJJvUmM2B9C+QCDulxE8EqQ0bRD2Q+iII+auCui3AZ7AzqcCDyBcSgUg0amxRfoTFLzSJHW36yB8KiXMCF/QkRH+bYOYGGHS/TnsnB+zRYGq/FFEj8AZc2cEqtw3NkXccP5DiS+2lwJlwBc7LBVrsjkGS+sRsGYJGI/rg/bzogLqWpc2YmWd2fzMEKYSD0eqI3pfEZHscv5DhitHmuodv3xALwNJLEwIsYdbhBgzJ4kZnp5IiJGl1CKfp63J7FUXtGhNSTnG4EVU7mrzWqWfWgkp16PshYg6UxFc291lLFhQhV16qa5odkSztZGkqeU4aygHiOhLSqFqeDv+LwXUigTknTFE8LVusthfu7ddh21OKsr46BXJhCsJoPNqZuJ2HdNLY9iNDIqek53aKbpBK9EgYRy5mKvWSGIWOOAtyl3SXRbwhrgmpRsSb+Ux8DMpnpdyeTfAAAAABJRU5ErkJggg=="
+                      alt="Google"
+                      width="18"
+                      height="18"
+                      class="icon me-2"
+                    />
+                    使用 Google 註冊
+                  </a>
+                  <a href="https://www.facebook.com/?locale=zh_TW" class="btn w-100 border-0 bg-neutral-200">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBvVO9SsRAEJ7d5OQKD9MdJ4gRfABLKznxAbTTVvEKnyLJA1hfcYpoZ2djf/oE2sqBsTEICgFF1Euyzk6SY/N3P819ELIz+fbb2ZkvAPNC/cIz5TOJx8qSes9rCxAWgNjA0EjSPrJvahp3fg5b7kQh3vMsBpENYyCA21Gn5VQKVYkYCxxWG5zWjx9BqdhIqN71zKEePedFds06nG8ZJCaxfv0G7meYbI62g85KX671dMOwFll4TAGnm0skcvX0De5XCP6vUK6oYR8hK4TZPSi5krmo0fro3i+eEg+DENfbpfEaRaHSoWYoqTX0KsZgvwlmQxvFwfEyvfWz11J+XNEJ+SJT+wv2I22qhFzfeX/5/X7qKaUi9oB3bqfRzu079Wdw0KRYTqsANGi2IsqFDsyIEF1eEJJ+QF9MLUZc5Vfh6kcUs6cRkxzJVXM8T5KEMOBr2K9Lzpk6AJ8x1k/cbMOsEEKY8oF54R/eZYMUmIQwhAAAAABJRU5ErkJggg=="
+                      alt="Facebook"
+                      width="18"
+                      height="18"
+                      class="icon me-2"
+                    />
+                    使用 Facebook 註冊
+                  </a>
+                </div>
+                <p class="text-center">
+                  已經是會員了？
+                  <a href="./signIn.html" class="text-accent-200">點此登入</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="border-1 border-top text-center py-5">©Vivre 2024 All right Reserved</div>
+  </div>
+</footer>
+
+    
+  </body>
+</html>
