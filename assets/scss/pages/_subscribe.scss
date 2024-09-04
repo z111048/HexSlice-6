@@ -1,0 +1,78 @@
+.section-plans {
+  .nav-link {
+    width: 196px;
+    @include sm {
+      width: 175.5px;
+    }
+  }
+
+  .price-container {
+    min-height: 128px;
+    row-gap: 16px;
+    @include sm {
+      min-height: 115px;
+    }
+  }
+
+  .plan {
+    height: 100%;
+    border: 1px solid $primary-300;
+    border-radius: 12px;
+    padding: 40px;
+    background-color: $neutral-100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .plan.featured {
+    border: 2px solid $accent-200;
+  }
+  .plan-name {
+    @include h5;
+    color: $neutral-400;
+    text-align: center;
+  }
+  .plan-price {
+    @include h4;
+    color: $neutral-400;
+    text-align: center;
+  }
+  .plan-price .original {
+    display: block;
+    font-family: Newsreader;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-decoration: line-through;
+  }
+  .plan-features {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .plan-features li {
+    @include h5;
+    padding-left: 32px;
+    position: relative;
+  }
+  .plan-features li::before {
+    content: '\f26c';
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    // vertical-align: -0.125em;
+    align-content: center;
+    -webkit-font-smoothing: antialiased;
+  }
+}

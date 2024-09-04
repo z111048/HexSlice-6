@@ -6,6 +6,7 @@
 @import 'bootstrap/scss/utilities/api';
 
 @import './base/base';
+@import './utils/mixins';
 @import './base/typography';
 
 @import './components/btn';
@@ -25,3 +26,9 @@
 
 @import './pages/index';
 @import './pages/arcicle';
+@import './pages/about';
+@import './pages/subscribe';
+@import './pages/signIn';
+@import './pages/signUp';
+@import './pages/pay';
+@import './pages/pay-success';

@@ -1,0 +1,166 @@
+.section-about-us {
+  .vivre-image,
+  .feature-image {
+    border-radius: 8px;
+    @include sm {
+      border-radius: 4px;
+    }
+  }
+
+  .sub-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+    padding: 0 40px;
+    @include sm {
+      row-gap: 16px;
+      padding: 0 12px;
+    }
+  }
+
+  .vivre-desc {
+    .vivre-name {
+      @include h2;
+      margin-bottom: 12px;
+      @include sm {
+        @include h4;
+        margin-bottom: 32px;
+      }
+    }
+
+    .vivre-txt {
+      @include fs-1;
+    }
+  }
+
+  .brand-desc {
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+      text-align: left;
+      margin-bottom: 12px;
+      color: $neutral-600;
+    }
+
+    .brand-values-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      .list-item {
+        &::marker {
+          font-size: 0.6em;
+        }
+        @include fs-1;
+        color: $neutral-400;
+      }
+    }
+  }
+
+  .style-features {
+    .sub-section-title {
+      @include h2;
+      @include sm {
+        @include h4;
+      }
+    }
+
+    .feature-desc {
+      @include fs-1;
+      color: $neutral-400;
+    }
+  }
+}
+
+.section-timeline {
+  background-color: $primary-200;
+  padding: 50px 0;
+
+  h2 {
+    text-align: left;
+    margin-bottom: 40px;
+    color: $neutral-500;
+    @include sm {
+      text-align: center;
+    }
+  }
+
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    &-item {
+      margin-bottom: 30px;
+
+      .timeline-year span {
+        display: block;
+        background-color: $primary-400;
+        margin-right: 72px;
+        padding: 12px;
+        font-family: Newsreader;
+        @include h4;
+        @include sm {
+          @include h6;
+        }
+        color: $neutral-200;
+        position: relative;
+      }
+    }
+  }
+
+  .timeline-events {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    .timeline-event {
+      column-gap: 16px;
+      @include sm {
+        column-gap: 12px;
+      }
+    }
+
+    .event-date {
+      min-width: 51px;
+      @include h6;
+      color: $neutral-400;
+    }
+
+    .event-date-month {
+      font-family: Newsreader;
+      @include h4;
+      @include sm {
+        @include h6;
+      }
+    }
+
+    .event-description {
+      position: relative;
+      padding-left: 16px;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        top: 0;
+        bottom: 0;
+        left: 0px;
+        background-color: $neutral-300;
+      }
+    }
+  }
+}
+
+.section-brand {
+  .sub-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+    padding: 0 40px;
+    @include sm {
+      row-gap: 16px;
+      padding: 0 12px;
+    }
+  }
+}

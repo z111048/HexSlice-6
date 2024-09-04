@@ -55,7 +55,7 @@
     }
 
     // overflow: hidden;
-    @include media-breakpoint-down(lg) {
+    @media (max-width: 1400px) {
       &::after {
         right: 0;
       }

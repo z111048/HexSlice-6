@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main>
+      <section class="section-breadcrumb">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <!-- breadcrumb -->
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="./index.html">首頁 </a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">訂閱方案</li>
+                </ol>
+              </nav>
+              <h1>訂閱方案</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-plans py-5">
+        <div class="container">
+          <ul class="nav nav-pills justify-content-center mb-4 mb-md-7" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-yearly-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-yearly"
+                type="button"
+                role="tab"
+                aria-controls="pills-yearly"
+                aria-selected="true"
+              >
+                年繳
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-monthly-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-monthly"
+                type="button"
+                role="tab"
+                aria-controls="pills-monthly"
+                aria-selected="false"
+              >
+                月繳
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-yearly"
+              role="tabpanel"
+              aria-labelledby="pills-yearly-tab"
+              tabindex="0"
+            >
+              <div class="row plans">
+                <div class="col-md-4 mb-4">
+                  <div class="plan row-gap-9">
+                    <div class="d-flex flex-column row-gap-9">
+                      <div class="d-flex flex-column row-gap-1 price-container">
+                        <div class="plan-name">家庭型</div>
+                        <div class="plan-price"><span class="newsreader-font">NT 7,188</span> / 年</div>
+                        <div class="plan-price">
+                          <span class="original"></span>
+                        </div>
+                      </div>
+                      <ul class="plan-features">
+                        <li>每月最新文章無限閱讀</li>
+                        <li>專屬會員限定內容</li>
+                        <li>定期電子報</li>
+                      </ul>
+                    </div>
+                    <a class="btn btn-custom mt-auto bg-neutral-200 text-neutral-400">
+                      我要訂閱
+                      <span class="bi bi-arrow-right icon"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="plan row-gap-9">
+                    <div class="d-flex flex-column row-gap-9">
+                      <div class="d-flex flex-column row-gap-1 price-container">
+                        <div class="plan-name">家庭型</div>
+                        <div class="plan-price"><span class="newsreader-font">NT 7,188</span> / 年</div>
+                        <div class="plan-price">
+                          <span class="original"></span>
+                        </div>
+                      </div>
+                      <ul class="plan-features">
+                        <li>每月最新文章無限閱讀</li>
+                        <li>專屬會員限定內容</li>
+                        <li>定期電子報</li>
+                        <li>年度精選禮物</li>
+                      </ul>
+                    </div>
+                    <a class="btn btn-custom mt-auto bg-neutral-200 text-neutral-400">
+                      我要訂閱
+                      <span class="bi bi-arrow-right icon"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="plan row-gap-9 featured">
+                    <div class="d-flex flex-column row-gap-9">
+                      <div class="d-flex flex-column row-gap-1 price-container">
+                        <div class="plan-name">家庭型</div>
+                        <div class="plan-price"><span class="newsreader-font">NT 7,188</span> / 年</div>
+                        <div class="plan-price">
+                          <span class="original">NT 10,788</span>
+                        </div>
+                      </div>
+                      <ul class="plan-features">
+                        <li>每月最新文章無限閱讀</li>
+                        <li>專屬會員限定內容</li>
+                        <li>定期電子報</li>
+                        <li>年度精選禮物</li>
+                        <li>24/7 優先客戶服務</li>
+                        <li>為每個成員量身打造專屬行程</li>
+                        <li>最多 5 個家庭成員共享</li>
+                      </ul>
+                    </div>
+                    <a href="./pay.html" class="btn btn-custom mt-auto">
+                      我要訂閱
+                      <span class="bi bi-arrow-right icon"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-monthly"
+              role="tabpanel"
+              aria-labelledby="pills-monthly-tab"
+              tabindex="0"
+            >
+              <!-- 月繳方案內容（與原始代碼相同） -->
+              <div class="row plans">
+                <div class="col-md-4 mb-4">
+                  <div class="plan row-gap-9">
+                    <div class="d-flex flex-column row-gap-9">
+                      <div class="d-flex flex-column row-gap-1 price-container">
+                        <div class="plan-name">家庭型</div>
+                        <div class="plan-price"><span class="newsreader-font">NT 7,188</span> / 年</div>
+                        <div class="plan-price">
+                          <span class="original"></span>
+                        </div>
+                      </div>
+                      <ul class="plan-features">
+                        <li>每月最新文章無限閱讀</li>
+                        <li>專屬會員限定內容</li>
+                        <li>定期電子報</li>
+                      </ul>
+                    </div>
+                    <a class="btn btn-custom mt-auto bg-neutral-200 text-neutral-400">
+                      我要訂閱
+                      <span class="bi bi-arrow-right icon"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="plan row-gap-9">
+                    <div class="d-flex flex-column row-gap-9">
+                      <div class="d-flex flex-column row-gap-1 price-container">
+                        <div class="plan-name">家庭型</div>
+                        <div class="plan-price"><span class="newsreader-font">NT 7,188</span> / 年</div>
+                        <div class="plan-price">
+                          <span class="original"></span>
+                        </div>
+                      </div>
+                      <ul class="plan-features">
+                        <li>每月最新文章無限閱讀</li>
+                        <li>專屬會員限定內容</li>
+                        <li>定期電子報</li>
+                        <li>年度精選禮物</li>
+                      </ul>
+                    </div>
+                    <a class="btn btn-custom mt-auto bg-neutral-200 text-neutral-400">
+                      我要訂閱
+                      <span class="bi bi-arrow-right icon"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="plan row-gap-9 featured">
+                    <div class="d-flex flex-column row-gap-9">
+                      <div class="d-flex flex-column row-gap-1 price-container">
+                        <div class="plan-name">家庭型</div>
+                        <div class="plan-price"><span class="newsreader-font">NT 7,188</span> / 年</div>
+                        <div class="plan-price">
+                          <span class="original">NT 10,788</span>
+                        </div>
+                      </div>
+                      <ul class="plan-features">
+                        <li>每月最新文章無限閱讀</li>
+                        <li>專屬會員限定內容</li>
+                        <li>定期電子報</li>
+                        <li>年度精選禮物</li>
+                        <li>24/7 優先客戶服務</li>
+                        <li>為每個成員量身打造專屬行程</li>
+                        <li>最多 5 個家庭成員共享</li>
+                      </ul>
+                    </div>
+                    <a href="./pay.html" class="btn btn-custom mt-auto">
+                      我要訂閱
+                      <span class="bi bi-arrow-right icon"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
