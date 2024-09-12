@@ -2,7 +2,7 @@
   .vivre-image,
   .feature-image {
     border-radius: 8px;
-    @include sm {
+    @include media-breakpoint-down(sm) {
       border-radius: 4px;
     }
   }
@@ -12,7 +12,7 @@
     flex-direction: column;
     row-gap: 36px;
     padding: 0 40px;
-    @include sm {
+    @include media-breakpoint-down(sm) {
       row-gap: 16px;
       padding: 0 12px;
     }
@@ -22,7 +22,7 @@
     .vivre-name {
       @include h2;
       margin-bottom: 12px;
-      @include sm {
+      @include media-breakpoint-down(sm) {
         @include h4;
         margin-bottom: 32px;
       }
@@ -61,7 +61,7 @@
   .style-features {
     .sub-section-title {
       @include h2;
-      @include sm {
+      @include media-breakpoint-down(sm) {
         @include h4;
       }
     }
@@ -81,7 +81,7 @@
     text-align: left;
     margin-bottom: 40px;
     color: $neutral-500;
-    @include sm {
+    @include media-breakpoint-down(sm) {
       text-align: center;
     }
   }
@@ -101,12 +101,17 @@
         padding: 12px;
         font-family: Newsreader;
         @include h4;
-        @include sm {
+        @include media-breakpoint-down(sm) {
           @include h6;
         }
         color: $neutral-200;
         position: relative;
       }
+    }
+
+    .timeline-item {
+      row-gap: 24px;
+      align-items: flex-start;
     }
   }
 
@@ -117,7 +122,7 @@
 
     .timeline-event {
       column-gap: 16px;
-      @include sm {
+      @include media-breakpoint-down(sm) {
         column-gap: 12px;
       }
     }
@@ -131,7 +136,7 @@
     .event-date-month {
       font-family: Newsreader;
       @include h4;
-      @include sm {
+      @include media-breakpoint-down(sm) {
         @include h6;
       }
     }
@@ -158,7 +163,7 @@
     flex-direction: column;
     row-gap: 36px;
     padding: 0 40px;
-    @include sm {
+    @include media-breakpoint-down(sm) {
       row-gap: 16px;
       padding: 0 12px;
     }

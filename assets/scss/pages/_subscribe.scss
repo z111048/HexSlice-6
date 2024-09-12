@@ -1,7 +1,7 @@
 .section-plans {
   .nav-link {
     width: 196px;
-    @include sm {
+    @include media-breakpoint-down(sm) {
       width: 175.5px;
     }
   }
@@ -9,7 +9,7 @@
   .price-container {
     min-height: 128px;
     row-gap: 16px;
-    @include sm {
+    @include media-breakpoint-down(sm) {
       min-height: 115px;
     }
   }

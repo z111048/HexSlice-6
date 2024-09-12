@@ -1,3 +1,6 @@
 .section-signup {
   padding: 100px 0;
+  @include media-breakpoint-down(lg) {
+    padding: 60px 0;
+  }
 }

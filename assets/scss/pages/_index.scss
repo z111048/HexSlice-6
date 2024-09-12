@@ -99,13 +99,13 @@
     p {
       @include h5;
       color: $primary-400;
-      @media (max-width: 768px) {
+      @include media-breakpoint-down(md) {
         @include h6;
         text-align: center;
       }
     }
     h2 {
-      @media (max-width: 768px) {
+      @include media-breakpoint-down(md) {
         @include h4;
         text-align: center;
         font-weight: 900;
@@ -118,7 +118,7 @@
 .section-decision {
   .decision-title {
     @include h2;
-    @media (max-width: 768px) {
+    @include media-breakpoint-down(md) {
       @include h4;
       font-weight: 900;
     }
@@ -126,7 +126,7 @@
   .decision-txt {
     @include h4;
     color: $neutral-500;
-    @media (max-width: 768px) {
+    @include media-breakpoint-down(md) {
       @include h5;
     }
   }
